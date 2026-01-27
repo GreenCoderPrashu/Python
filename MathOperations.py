@@ -6,8 +6,31 @@ def Math_Operations():
         ch = int(input("\"Enter your choice\" :  "))
     
         def Logical_Operations():
-            print("Currently Working On it...")
-            exit()
+            print("Basic Logical Operations \n _____________________________________")
+            print("Choose Your Choice \n 1) \'OR\' Operations \n 2) \'AND\' Operations \n 3) \'NOT\' Operations \n 4) \'NOR\' Operations \n 5) \'NAND\' Operations")
+            print(" 8) Exit From Basic Logical Operations")
+            while True:
+                ch = int(input("\"Enter your choice\" (To see choice list enter 0): "))
+                if ch == 1:
+                    print("You selected \"\'OR\' Operations\" \n --------------------------------------------")
+                    x=int(input("Enter Firest Value (\"0/1\") :"))
+                    y=int(input("Enter Second Value (\"0/1\") :"))
+                    print(f"{x} OR {y} = {x or y}")
+                elif ch == 2:
+                    print("You selected \"\'AND\' Operations\" \n -------------------------------------------- ")
+                    x=int(input("Enter Firest Value (\"0/1\") :"))
+                    y=int(input("Enter Second Value (\"0/1\") :"))
+                    print(f"{x} AND {y} = {x and y}")
+                elif ch == 3:
+                    print("You selected \"\'NOT\' Operations\" \n -------------------------------------------- ")
+                    x=int(input("Enter The Value (\"0/1\") :"))
+                    print(f"NOT Of {x} = {not(x)}")
+                elif ch == 8:
+                    print("You selected \"Exit from the Basic Logical Operations\"")
+                    print("\n \" Exited From Basic Logical Operations \"")
+                    break
+                else:
+                    print("Plese enter the correct choice")
 
         def Scientific_Operations():
             print("Currently Working On it...")
