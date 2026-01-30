@@ -8,24 +8,36 @@ def Math_Operations():
         def Logical_Operations():
             print("Basic Logical Operations \n _____________________________________")
             print("Choose Your Choice \n 1) \'OR\' Operations \n 2) \'AND\' Operations \n 3) \'NOT\' Operations \n 4) \'NOR\' Operations \n 5) \'NAND\' Operations")
-            print(" 8) Exit From Basic Logical Operations")
+            print(" 6) Exit From Basic Logical Operations")
             while True:
                 ch = int(input("\"Enter your choice\" (To see choice list enter 0): "))
                 if ch == 1:
                     print("You selected \"\'OR\' Operations\" \n --------------------------------------------")
-                    x=int(input("Enter Firest Value (\"0/1\") :"))
-                    y=int(input("Enter Second Value (\"0/1\") :"))
+                    x=(input("Enter Firest Value (\"True \\ False\") :")).lower() == 'true'
+                    y=(input("Enter Second Value (\"True \\ False\") :")).lower() == 'true'
                     print(f"{x} OR {y} = {x or y}")
                 elif ch == 2:
                     print("You selected \"\'AND\' Operations\" \n -------------------------------------------- ")
-                    x=int(input("Enter Firest Value (\"0/1\") :"))
-                    y=int(input("Enter Second Value (\"0/1\") :"))
+                    x=(input("Enter Firest Value (\"True \\ False\") :")).lower() == 'true'
+                    y=(input("Enter Second Value (\"True \\ False\") :")).lower() == 'true'
                     print(f"{x} AND {y} = {x and y}")
                 elif ch == 3:
                     print("You selected \"\'NOT\' Operations\" \n -------------------------------------------- ")
-                    x=int(input("Enter The Value (\"0/1\") :"))
+                    x=(input("Enter The Value (\"True \\ False\") :")).lower() == 'true'
                     print(f"NOT Of {x} = {not(x)}")
-                elif ch == 8:
+                elif ch == 4:
+                    print("You selected \"\'NOR\' Operations\" \n -------------------------------------------- ")
+                    x=(input("Enter Firest Value (\"True \\ False\") :")).lower() == 'true'
+                    y=(input("Enter Second Value (\"True \\ False\") :")).lower() == 'true'
+                    nor =x or y
+                    print(f"{x} NOR {y} = {not(nor)}")
+                elif ch == 5:
+                    print("You selected \"\'NAND\' Operations\" \n -------------------------------------------- ")
+                    x=(input("Enter Firest Value (\"True \\ False\") :")).lower() == 'true'
+                    y=(input("Enter Second Value (\"True \\ False\") :")).lower() == 'true'
+                    nand =x and y
+                    print(f"{x} NAND {y} = {not(nand)}")
+                elif ch == 6:
                     print("You selected \"Exit from the Basic Logical Operations\"")
                     print("\n \" Exited From Basic Logical Operations \"")
                     break
