@@ -1,3 +1,4 @@
+import math
 def Math_Operations():
     print(" \n I'm here to help on Mathematical Operations \n _______________________________________________")
     while True:
@@ -52,6 +53,29 @@ def Math_Operations():
             print("Choose Your Choice \n 1) Sine(sin) \n 2) Cosine(cos) \n 3) Tangent(tan) 4) Exit From Trigonometric Operations")
             while True:
                 ch = int(input("\"Enter your choice\" (To see choice list enter 0): "))
+                if ch == 0:
+                    print("Choose Your Choice \n 1) Sine(sin) \n 2) Cosine(cos) \n 3) Tangent(tan) 4) Exit From Trigonometric Operations")
+                elif ch == 1:
+                    print("You selected \"\'Sine(sin)\' Operations\" \n --------------------------------------------")
+                    r = float(input("Enter Angle in Radians :"))
+                    sin = math.sin(r)
+                    print(f"The value of sin is : {sin}")
+                elif ch == 2:
+                    print("You selected \"\'Cosine(cos)\' Operations\" \n --------------------------------------------")
+                    r = float(input("Enter Angle in Radians :"))
+                    cos = math.cos(r)
+                    print(f"The value of cos is : {cos}")
+                elif ch == 3:
+                    print("You selected \"\'Tangent(tan)\' Operations\" \n --------------------------------------------")
+                    r = float(input("Enter Angle in Radians :"))
+                    tan = math.tan(r)
+                    print(f"The value of tan is : {tan}")
+                elif ch == 4:
+                    print("You selected \"Exit from Trigonometric Operations\"")
+                    print("\n \" Exited From Trigonometric Operations \"")
+                    break
+                else:
+                    print("Please enter the correct choice")
             
             
         def Arithmetic_Operations():
