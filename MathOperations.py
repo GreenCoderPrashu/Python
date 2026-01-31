@@ -2,7 +2,7 @@ def Math_Operations():
     print(" \n I'm here to help on Mathematical Operations \n _______________________________________________")
     while True:
 
-        print("Which type of operation you want??? \n Choose one as follows \n 1) Logical Operations... \n 2) Scientific Operations... \n 3) Basic Arithmetic Operations... \n 4) Exit...")
+        print("Which type of operation you want??? \n Choose one as follows \n 1) Logical Operations... \n 2) Trigonometric Operations... \n 3) Basic Arithmetic Operations... \n 4) Exit...")
         ch = int(input("\"Enter your choice\" :  "))
     
         def Logical_Operations():
@@ -41,12 +41,17 @@ def Math_Operations():
                     print("You selected \"Exit from the Basic Logical Operations\"")
                     print("\n \" Exited From Basic Logical Operations \"")
                     break
+                elif ch == 0:
+                    print("Choose Your Choice \n 1) \'OR\' Operations \n 2) \'AND\' Operations \n 3) \'NOT\' Operations \n 4) \'NOR\' Operations \n 5) \'NAND\' Operations")
+                    print(" 6) Exit From Basic Logical Operations") 
                 else:
-                    print("Plese enter the correct choice")
+                    print("Please enter the correct choice")
 
-        def Scientific_Operations():
-            print("Currently Working On it...")
-            exit()
+        def Trigonometric_Operations():
+            print("Basic Trigonometric Operations \n _____________________________________")
+            print("Choose Your Choice \n 1) Sine(sin) \n 2) Cosine(cos) \n 3) Tangent(tan) 4) Exit From Trigonometric Operations")
+            while True:
+                ch = int(input("\"Enter your choice\" (To see choice list enter 0): "))
             
             
         def Arithmetic_Operations():
@@ -121,15 +126,15 @@ def Math_Operations():
                     print("5==> For \"Modulus\"\n6==> For \"See the history of your caluculations\"\n7==> For \"Exit from the Basic Arithmetic Operations\"")
 
                 else:
-                    print("Plese enter the correct choice")
+                    print("Please enter the correct choice")
         if ch == 1:
             Logical_Operations()
         elif ch == 2:
-            Scientific_Operations()
+            Trigonometric_Operations()
         elif ch == 3:
             Arithmetic_Operations()
         elif ch == 4:
             exit()
         else :
-            print("Plese enter the correct choice")                          
+            print("Please enter the correct choice")                          
 Math_Operations()
