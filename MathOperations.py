@@ -164,18 +164,35 @@ def Math_Operations():
                     print(" 8) Exit From Basic Geometry Operations")
                 elif ch == 1:
                     print("You selected \" Area of a Circle \" \n -----------------------------------------")
+                    r=float(input("Enter redius : "))
+                    print(f"Area of a circle is : {math.pi*(r*r)}")
                 elif ch == 2:
                     print("You selected \" Area of a Rectangle \" \n -----------------------------------------")
+                    l=float(input("Enter the Length : "))
+                    w=float(input("Enter the Width : "))
+                    print(f"Area of a rectangle is : {l*w}")
                 elif ch == 3:
                     print("You selected \" Area of a Triangle \" \n -----------------------------------------")
+                    b=float(input("Enter the Length : "))
+                    h=float(input("Enter the Width : "))
+                    print(f"Area of a Triangle is : {.5*b*h}")
                 elif ch == 4:
                     print("You selected \" Perimeter of a Rectangle \" \n -----------------------------------------")
+                    l=float(input("Enter the Length : "))
+                    w=float(input("Enter the Width : "))
+                    print(f"Perimeter of a Rectangle is : {2*(l+w)}")
                 elif ch == 5:
                     print("You selected \" Circumference of a Circle \" \n -----------------------------------------")
+                    r=float(input("Enter redius : "))
+                    print(f"Circumference of a Circle is : {2*math.pi*r}")
                 elif ch == 6:
                     print("You selected \" Volume of a Cube \" \n -----------------------------------------")
+                    s=float(input("Enter the side : "))
+                    print(f"Volume of a Cube is :{s**3}")
                 elif ch == 7:
                     print("You selected \" Volume of a Sphere \" \n -----------------------------------------")
+                    r=float(input("Enter the radius : "))
+                    print(f"Volume of a Sphere is :{(4/3)*math.pi*(r**3)}")
                 elif ch == 8:
                     print("You selected \"Exit from the Basic Geometry Operations\"")
                     print("\n \" Exited From Basic Geometry Operations \"")
