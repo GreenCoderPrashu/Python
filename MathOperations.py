@@ -1,9 +1,9 @@
 import math
+
 def Math_Operations():
-    print(" \n I'm here to help on Mathematical Operations \n _______________________________________________")
     while True:
 
-        print("Which type of operation you want??? \n Choose one as follows \n 1) Logical Operations... \n 2) Trigonometric Operations... \n 3) Basic Arithmetic Operations... \n 4) Geometry Operations... 5) Exit...")
+        print("\n Which type of operation you want??? \n \n Choose one of the following \n 1) Logical Operations... \n 2) Trigonometric Operations... \n 3) Basic Arithmetic Operations... \n 4) Geometry Operations...\n 5) Exit...")
         ch = int(input("\"Enter your choice\" :  "))
     
         def Logical_Operations():
@@ -154,13 +154,13 @@ def Math_Operations():
 
         def Geometry_Operations():
             print("Basic Geometry Operations \n __________________________________")
-            print("Your choices are :- 1) Area of a Circle \n 2) Area of a Rectangle \n 3) Area of a Triangle \n 4) Perimeter of a Rectangle \n 5) Circumference of a Circle \n 6) Volume of a Cube \n 7) Volume of a Sphere" )
+            print("Your choices are :-\n 1) Area of a Circle \n 2) Area of a Rectangle \n 3) Area of a Triangle \n 4) Perimeter of a Rectangle \n 5) Circumference of a Circle \n 6) Volume of a Cube \n 7) Volume of a Sphere" )
             print(" 8) Exit From Basic Geometry Operations")
             while True:
                 ch = int(input("\"Enter your choice\" (To see choice list enter 0): "))
 
                 if ch == 0:
-                    print("Your choices are :- 1) Area of a Circle \n 2) Area of a Rectangle \n 3) Area of a Triangle \n 4) Perimeter of a Rectangle \n 5) Circumference of a Circle \n 6) Volume of a Cube \n 7) Volume of a Sphere" )
+                    print("Your choices are :-\n 1) Area of a Circle \n 2) Area of a Rectangle \n 3) Area of a Triangle \n 4) Perimeter of a Rectangle \n 5) Circumference of a Circle \n 6) Volume of a Cube \n 7) Volume of a Sphere" )
                     print(" 8) Exit From Basic Geometry Operations")
                 elif ch == 1:
                     print("You selected \" Area of a Circle \" \n -----------------------------------------")
@@ -173,8 +173,8 @@ def Math_Operations():
                     print(f"Area of a rectangle is : {l*w}")
                 elif ch == 3:
                     print("You selected \" Area of a Triangle \" \n -----------------------------------------")
-                    b=float(input("Enter the Length : "))
-                    h=float(input("Enter the Width : "))
+                    b=float(input("Enter the base : "))
+                    h=float(input("Enter the hight : "))
                     print(f"Area of a Triangle is : {.5*b*h}")
                 elif ch == 4:
                     print("You selected \" Perimeter of a Rectangle \" \n -----------------------------------------")
@@ -212,4 +212,9 @@ def Math_Operations():
             exit()
         else :
             print("Please enter the correct choice")                          
-Math_Operations()
+print(" \n I'm here to help on Mathematical Operations \n _______________________________________________")
+ch=input("Do You Want Mathematical Operations Press \'yes\' : ").lower()
+if ch == 'yes':
+    Math_Operations()
+else:
+    exit()
